@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Melody Masters</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span>🎵 Melody Masters</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="lessons.html">Уроки</a></li>
+                        <li><a href="teachers.html">Преподаватели</a></li>
+                        <li><a href="booking.html">Запись</a></li>
+                        <li><a href="contacts.html" class="active">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <button class="btn btn-outline" id="loginBtn">Войти</button>
+                    <button class="btn btn-primary" id="registerBtn">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contacts Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Контакты</h1>
+            <p>Свяжитесь с нами любым удобным способом</p>
+        </div>
+    </section>
+
+    <!-- Contacts Content -->
+    <section class="contacts-content">
+        <div class="container">
+            <div class="contacts-grid">
+                <div class="contact-info">
+                    <h2>Наши контакты</h2>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Адрес</h3>
+                            <p>г. Москва, ул. Музыкальная, д. 15</p>
+                            <p class="contact-note">5 минут от метро "Охотный ряд"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Телефоны</h3>
+                            <p>+7 (999) 123-45-67 - администратор</p>
+                            <p>+7 (999) 765-43-21 - учебная часть</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@melodymasters.ru - общие вопросы</p>
+                            <p>booking@melodymasters.ru - запись на уроки</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-details">
+                            <h3>Часы работы</h3>
+                            <p>Пн-Пт: 9:00 - 21:00</p>
+                            <p>Сб-Вс: 10:00 - 18:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Мы в социальных сетях</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon">📘</a>
+                            <a href="#" class="social-icon">📷</a>
+                            <a href="#" class="social-icon">🎵</a>
+                            <a href="#" class="social-icon">📺</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>Напишите нам</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Ваше имя *</label>
+                                <input type="text" id="contactName" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email *</label>
+                                <input type="email" id="contactEmail" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactSubject">Тема сообщения</label>
+                            <select id="contactSubject" name="subject">
+                                <option value="">Выберите тему</option>
+                                <option value="lesson">Запись на урок</option>
+                                <option value="question">Вопрос о занятиях</option>
+                                <option value="partnership">Сотрудничество</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactMessage">Сообщение *</label>
+                            <textarea id="contactMessage" name="message" rows="5" required placeholder="Расскажите, чем мы можем вам помочь..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="map-section">
+                <h2>Как нас найти</h2>
+                <div class="map-container">
+                    <!-- Здесь будет карта -->
+                    <div class="map-placeholder">
+                        <div class="map-info">
+                            <h3>Мы находимся в центре Москвы</h3>
+                            <p>Удобное расположение рядом с метро "Охотный ряд"</p>
+                            <div class="transport-info">
+                                <div class="transport-item">
+                                    <div class="transport-icon">🚇</div>
+                                    <p><strong>Метро:</strong> Охотный ряд (5 мин. пешком)</p>
+                                </div>
+                                <div class="transport-item">
+                                    <div class="transport-icon">🚌</div>
+                                    <p><strong>Автобус:</strong> ост. "Театральная площадь"</p>
+                                </div>
+                                <div class="transport-item">
+                                    <div class="transport-icon">🚗</div>
+                                    <p><strong>Парковка:</strong> есть платная парковка рядом</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-section">
+                <h2>Часто задаваемые вопросы</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>С какого возраста можно начинать обучение?</h3>
+                        <p>Мы принимаем детей от 5 лет на отдельные программы и взрослых без ограничения возраста. Для каждого возраста разработаны специальные методики обучения.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Нужно ли иметь свой инструмент?</h3>
+                        <p>Для первых занятий инструмент не обязателен - мы предоставим всё необходимое. Для регулярных занятий рекомендуем иметь свой инструмент для домашней практики.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Можно ли поменять преподавателя?</h3>
+                        <p>Да, конечно. Если по каким-то причинам вам не подходит стиль преподавания, мы бесплатно подберем другого преподавателя.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Что если я пропущу занятие?</h3>
+                        <p>При предупреждении за 24 часа мы бесплатно перенесем занятие. В экстренных случаях рассматриваем индивидуально.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Melody Masters</h3>
+                    <p>Школа музыки для всех возрастов и уровней подготовки. Откройте в себе талант вместе с нами!</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="lessons.html">Уроки</a></li>
+                        <li><a href="teachers.html">Преподаватели</a></li>
+                        <li><a href="booking.html">Запись</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p>📞 +7 (999) 123-45-67</p>
+                    <p>✉️ info@melodymasters.ru</p>
+                    <p>📍 Москва, ул. Музыкальная, 15</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Подписка</h4>
+                    <p>Подпишитесь на новости и акции</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email">
+                        <button type="submit" class="btn btn-primary">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Melody Masters. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальные окна -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Вход в аккаунт</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Пароль</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Войти</button>
+            </form>
+            <p>Нет аккаунта? <a href="#" id="showRegister">Зарегистрироваться</a></p>
+        </div>
+    </div>
+
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Регистрация</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="regName">Имя</label>
+                    <input type="text" id="regName" required>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail">Email</label>
+                    <input type="email" id="regEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword">Пароль</label>
+                    <input type="password" id="regPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="regConfirmPassword">Подтвердите пароль</label>
+                    <input type="password" id="regConfirmPassword" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+            </form>
+            <p>Уже есть аккаунт? <a href="#" id="showLogin">Войти</a></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/auth.js"></script>
+    <script>
+        // Обработка формы обратной связи
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const formData = {
+                        name: document.getElementById('contactName').value,
+                        email: document.getElementById('contactEmail').value,
+                        subject: document.getElementById('contactSubject').value,
+                        message: document.getElementById('contactMessage').value
+                    };
+                    
+                    // В реальном приложении здесь была бы отправка на сервер
+                    // Для демонстрации просто показываем сообщение об успехе
+                    
+                    alert('Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.');
+                    contactForm.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>

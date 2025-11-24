@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на урок - Melody Masters</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header (такой же как в index.html) -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span>🎵 Melody Masters</span>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="lessons.html">Уроки</a></li>
+                        <li><a href="teachers.html">Преподаватели</a></li>
+                        <li><a href="booking.html" class="active">Запись</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons">
+                    <button class="btn btn-outline" id="loginBtn">Войти</button>
+                    <button class="btn btn-primary" id="registerBtn">Регистрация</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Booking Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Запись на урок</h1>
+            <p>Выберите инструмент, преподавателя и удобное время</p>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking-form-section">
+        <div class="container">
+            <div class="booking-form-container">
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="instrument">Инструмент</label>
+                        <select id="instrument" name="instrument" required>
+                            <option value="">Выберите инструмент</option>
+                            <option value="piano">Фортепиано</option>
+                            <option value="guitar">Гитара</option>
+                            <option value="violin">Скрипка</option>
+                            <option value="drums">Ударные</option>
+                            <option value="vocal">Вокал</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="teacher">Преподаватель</label>
+                        <select id="teacher" name="teacher" required>
+                            <option value="">Выберите преподавателя</option>
+                            <!-- Преподаватели будут загружаться динамически -->
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lessonType">Тип урока</label>
+                        <select id="lessonType" name="lessonType" required>
+                            <option value="">Выберите тип урока</option>
+                            <option value="individual">Индивидуальный</option>
+                            <option value="group">Групповой</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="date">Дата урока</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time">Время урока</label>
+                        <select id="time" name="time" required>
+                            <option value="">Выберите время</option>
+                            <!-- Время будет загружаться динамически -->
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="notes">Дополнительные пожелания</label>
+                        <textarea id="notes" name="notes" rows="4" placeholder="Расскажите о ваших целях, предпочтениях или особых требованиях..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Записаться на урок</button>
+                </form>
+                
+                <div class="booking-summary">
+                    <h3>Сводка записи</h3>
+                    <div id="summaryContent">
+                        <p>Выберите параметры урока, чтобы увидеть сводку</p>
+                    </div>
+                    <div class="price-info" id="priceInfo">
+                        <!-- Информация о стоимости будет отображаться здесь -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (такой же как в index.html) -->
+    <footer>
+        <!-- Содержимое футера -->
+    </footer>
+
+    <!-- Модальные окна (такие же как в index.html) -->
+    <div id="loginModal" class="modal">
+        <!-- Содержимое модального окна входа -->
+    </div>
+
+    <div id="registerModal" class="modal">
+        <!-- Содержимое модального окна регистрации -->
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>
